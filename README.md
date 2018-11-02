@@ -1,6 +1,7 @@
 # \<rg-flashcard\>
 
-A flashcard web component for 
+A [flashcard](https://robert-groensfeld.github.io/rg-flashcard/bower_components/rg-flashcard/) 
+web component for 
 [Polymer 1.0](https://www.polymer-project.org/1.0/docs/).
 
 ## Prerequisites
