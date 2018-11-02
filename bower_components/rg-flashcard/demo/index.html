@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>rg-flashcard demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../rg-flashcard.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic flash card</h3>
+      <demo-snippet>
+        <template>
+          <rg-flashcard>
+            <div slot="front">
+              <h1>Front side</h1>
+              <p>
+                Pellentesque ut varius nisl. Suspendisse hendrerit
+                mauris vitae libero faucibus, quis iaculis purus
+                rhoncus. Aliquam eu arcu convallis, ultrices lectus
+                vitae, hendrerit orci. Nullam vel eleifend neque.
+                Morbi rhoncus elementum mi, at eleifend dolor venenatis
+                sit amet. Vivamus scelerisque accumsan eros, ut
+                pulvinar velit bibendum quis. Sed quis posuere quam.
+                Mauris in commodo libero. Nunc rhoncus feugiat felis,
+                at finibus neque congue ut. Morbi aliquam felis velit,
+                vel lobortis metus tincidunt nec. Nulla facilisi.
+                Morbi ut varius est, at pharetra neque.
+              </p>
+            </div>
+            <div slot="back">
+              <h1>Back side</h1>
+            </div>
+          </rg-flashcard>
+        </template>
+      </demo-snippet>
+
+      <h3>Flash card with more content on the back side than the front side</h3>
+      <demo-snippet>
+        <template>
+          <rg-flashcard>
+            <div slot="front">
+              <h1>Front side</h1>
+            </div>
+            <div slot="back">
+              <h1>Back side</h1>
+              <div style="width: 200px; height: 200px; background: goldenrod;"></div>
+            </div>
+          </rg-flashcard>
+        </template>
+      </demo-snippet>
+
+      <h3>Flash card where flipping is disabled</h3>
+      <demo-snippet>
+        <template>
+          <rg-flashcard noflip>
+            <div slot="front">
+              <h1>Front side</h1>
+            </div>
+            <div slot="back">
+              <h1>Back side</h1>
+            </div>
+          </rg-flashcard>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
